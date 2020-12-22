@@ -1,7 +1,7 @@
+const routesHandler = require("../handler/routesHandler");
+
 module.exports = {
   method: "GET",
   path: "/",
-  handler: (request, h) => {
-    return "Hello World!";
-  },
+  handler: routesHandler.rootHandler,
 };
